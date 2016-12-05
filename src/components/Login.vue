@@ -1,11 +1,12 @@
 <template lang="pug">
-.login
-  .login-title
-    | Welcome To Your Personal Area
-  input(type="text" placeholder="Login")
-  input(type="password" placeholder="Password")
-  button(type="submit") Log In
+  .login
+    .login-title
+      | Welcome To Your Personal Area
+    input(type="text" placeholder="Login")
+    input(type="password" placeholder="Password")
+    button(type="submit") Log In
 </template>
+
 <script type="text/babel">
   export default {
     name: "LoginComponent",
@@ -19,6 +20,7 @@
     }
   }
 </script>
+
 <style lang="scss" scoped rel="stylesheet/scss">
   .login {
     display: flex;

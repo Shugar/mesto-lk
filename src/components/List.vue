@@ -1,32 +1,34 @@
 <template lang="pug">
-.header
-  .header-logo
-    | Residents of Mesto Place
-
-  //- .header-login
-  //-   | Log In
-  .header-login
-    .header-name
-      | Nikita Shestakov
-    .header-button
-      | Log out
-
-.users
-  .users-title
-    | Users List
-  .users-item
-    | Tigran Tumasov
-  .users-item
-    | Boris Adimov
-  .users-item
-    | Nikita Golovin
-  .users-item
-    | Alex Taktarov
-  .users-item
-    | Ilya Sayapin
-  .users-item
-    | Anton Undefined
+  .list
+    .header
+      .header-logo
+        | Residents of Mesto Place
+    
+      //- .header-login
+      //-   | Log In
+      .header-login
+        .header-name
+          | Nikita Shestakov
+        .header-button
+          | Log out
+    
+    .users
+      .users-title
+        | Users List
+      .users-item
+        | Tigran Tumasov
+      .users-item
+        | Boris Adimov
+      .users-item
+        | Nikita Golovin
+      .users-item
+        | Alex Taktarov
+      .users-item
+        | Ilya Sayapin
+      .users-item
+        | Anton Undefined
 </template>
+
 <script type="text/babel">
   export default {
     name: "ListComponent",
@@ -40,6 +42,7 @@
     }
   }
 </script>
+
 <style lang="scss" scoped rel="stylesheet/scss">
   .header {
     background: #eee;

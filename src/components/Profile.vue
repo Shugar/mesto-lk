@@ -1,14 +1,24 @@
 <template lang="pug">
-.login
-  .login-title
-    | Welcome To Your Personal Area
-  input(type="text" placeholder="Login")
-  input(type="password" placeholder="Password")
-  button(type="submit") Log In
+  .profile
+    .profile-title
+      | Profile
+
+    .profile-info
+      input(type="text" placeholder="Фамилия")
+      input(type="text" placeholder="Имя")
+      input(type="text" placeholder="Отчество")
+      input(type="text" placeholder="Телефон")
+      input(type="text" placeholder="Email")
+      input(type="text" placeholder="Серия и номер паспорта")
+      input(type="text" placeholder="Пароль")
+      input(type="text" placeholder="Офис/место в опен-спейсе")
+      input(type="text" placeholder="Статус")
+      input(type="text" placeholder="Задолженность")
+      button(type="submit") Save
 </template>
 <script type="text/babel">
   export default {
-    name: "LoginComponent",
+    name: "ProfileComponent",
 
     data () {
       return {
@@ -20,21 +30,17 @@
   }
 </script>
 <style lang="scss" scoped rel="stylesheet/scss">
-  .login {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  .profile {
+    padding: 90px 0;
 
     &-title {
+      padding: 0 16px 20px;
       font-size: 24px;
       font-weight: bold;
-      margin-bottom: 10px;
+    }
+
+    &-info {
+      padding: 0 16px;
     }
 
     input {
